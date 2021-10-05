@@ -13,7 +13,7 @@ public class ContinueSwitch {
 
         if (!inputNum.equals("1")
                 || !inputNum.equals("2") ){
-            throw new IllegalArgumentException("올바른 선택값이 아닙니다.");
+            throw new IllegalArgumentException("[ERROR] 올바른 선택값이 아닙니다.");
         }
         return false;
     }

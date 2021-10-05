@@ -17,4 +17,6 @@ public class BaseballResult {
     public int getBall() {
         return Ball;
     }
+
+
 }
