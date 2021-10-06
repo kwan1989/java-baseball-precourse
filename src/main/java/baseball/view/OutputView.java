@@ -7,11 +7,11 @@ public class OutputView {
     public static boolean userOutput(BaseballResult baseballResult) {
         String result = "";
         if (baseballResult.getStrike() > 0) {
-            result += Integer.toString(baseballResult.getStrike()).concat(" 스트라이크 ");
+            result += Integer.toString(baseballResult.getStrike()).concat("스트라이크 ");
         }
 
         if (baseballResult.getBall() > 0) {
-            result += Integer.toString(baseballResult.getBall()).concat(" 볼 ");
+            result += Integer.toString(baseballResult.getBall()).concat("볼");
         }
 
         if (result.equals("")){

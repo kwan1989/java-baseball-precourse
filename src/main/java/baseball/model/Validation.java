@@ -14,6 +14,10 @@ public class Validation {
         validation(lst);
     }
 
+    /**
+     * 사이즈 & 중복 체크
+     * @param number
+     */
     private void validation(List<String> number) {
         if (number.size() != BASEBALL_SIZE) {
             throw new IllegalArgumentException(SIZE_EXCEPTION);

@@ -46,13 +46,11 @@ public class BaseballServiceTest {
         inputNum.add("1");
         inputNum.add("2");
         inputNum.add("3");
-
         baseballRandomNumber = new BaseballRandomNumber(randomNum);
         baseballInputNumber = new BaseballInputNumber(inputNum);
         BaseballResult result =  baseballService.checkBallResult(baseballRandomNumber, baseballInputNumber);
         assertThat(result.getStrike()).isEqualTo(3);
         assertThat(result.getBall()).isEqualTo(0);
-
 
         // TC-2
         randomNum = new ArrayList<>();
@@ -63,12 +61,10 @@ public class BaseballServiceTest {
         inputNum.add("1");
         inputNum.add("3");
         inputNum.add("5");
-
         baseballRandomNumber = new BaseballRandomNumber(randomNum);
         baseballInputNumber = new BaseballInputNumber(inputNum);
         result =  baseballService.checkBallResult(baseballRandomNumber, baseballInputNumber);
         assertThat(result.getStrike()).isEqualTo(1);
         assertThat(result.getBall()).isEqualTo(1);
-
     }
 }
