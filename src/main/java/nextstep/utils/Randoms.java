@@ -15,7 +15,9 @@ public class Randoms {
     private static final Random RANDOM = new Random();
 
     private Randoms() {
+
     }
+
 
     /**
      * 범위내의 랜덤한 숫자를 한개를 반환하는 기능을 수행한다. 임의의 int 를 반환한다.
